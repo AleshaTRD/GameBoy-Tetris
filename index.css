@@ -1,0 +1,154 @@
+/* #app canvas {
+  border: 3px solid red;
+  margin-left: 50px;
+} */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gameboyExit {
+  /* margin-left: 0px; */
+  margin-right: -161px;
+  width: 161px;
+  display: none;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 35px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#gameboy {
+  display: none;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8%;
+  background-color: red;
+  width: 440px;
+  height: 800px;
+  padding: 10px;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.9), inset 0 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+#gameboy canvas {
+  margin-left: 40px;
+  margin-top: 40px;
+
+  background-color: gray;
+  box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.7);
+}
+#gameboy button {
+  cursor: grab;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: yellow;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#gameboy button:active {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+body {
+  /* background-image: url("/img/1663839377_2-phonoteka-org-p-foni-among-as-krasivo-2.jpg"); */
+  background-image: url("123.gif");
+  background-size: contain;
+}
+.btnControls {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+#arrowsImg {
+  width: 35px;
+  /* height: 40px; */
+  margin-left: 5px;
+  margin-right: 5px;
+
+  /* background-image: url("cross.svg"); */
+}
+#btnUp {
+  margin-left: 42px;
+}
+#btnDown {
+  margin-left: 42px;
+}
+#gameboy .btnRotate {
+  margin-top: 25px;
+  width: 75px;
+  height: 75px;
+}
+#txtRotate {
+  margin-left: 3px;
+  margin-top: 5px;
+  height: 20px;
+  color: black;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 12px;
+}
+#menu {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu button {
+  display: block;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 45px;
+  margin-top: 15px;
+}
+#h1 {
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+  font-size: 75px;
+  margin-top: -200px;
+  margin-bottom: 200px;
+}
+
+#menu button:hover,
+#menu button:focus {
+  text-shadow: 0 0 20px #6c0ea2;
+  margin-left: 0.5em;
+  outline: none;
+  position: relative;
+  transition: margin 0.5s ease-in-out;
+}
+#displayHiScore {
+  display: block;
+  font-family: "Press Start 2P", sans-serif;
+
+  color: white;
+  font-size: 45px;
+  margin-top: 15px;
+}
+
+/* #menu button:focus::before,
+#menu button:hover::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  color: transparent;
+} */
